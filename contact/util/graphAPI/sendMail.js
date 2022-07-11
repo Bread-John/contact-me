@@ -32,12 +32,11 @@ module.exports = async function (values) {
                 authority: `https://login.microsoftonline.com/${tenantId}`
             },
         };
+        const cca = new msal.ConfidentialClientApplication(msalConf);
 
         const tokenReq = {
             scopes: ['https://graph.microsoft.com/.default']
         };
-
-        const cca = new msal.ConfidentialClientApplication(msalConf);
         const tokens = await cca.acquireTokenByClientCredential(tokenReq);
 
         const headers = new fetch.Headers();

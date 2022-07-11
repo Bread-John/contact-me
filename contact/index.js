@@ -1,8 +1,8 @@
 const { validateContactForm } = require('./util/inputValidator');
 const { sanitiseSpecialChar } = require('./util/inputSanitiser');
-const graphSendMail = require('./util/graphAPI/sendMail');
+const sendMail = require('./util/graphAPI/sendMail');
 
-module.exports = async function (context, req) {
+module.exports = function (context, req) {
     try {
         if (req.body) {
             const validationFaults = validateContactForm(req.body);
@@ -18,7 +18,7 @@ module.exports = async function (context, req) {
             } else {
                 const cleanValues = sanitiseSpecialChar(req.body);
 
-                await graphSendMail(cleanValues)
+                sendMail(cleanValues)
                     .then(function (response) {
                         context.res = {
                             status: response.status || 200,
