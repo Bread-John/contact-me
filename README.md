@@ -59,6 +59,16 @@ An Azure server-less function written in JavaScript (Node) for handling contact 
 + Register this function as a new application and acquire the client secret within AAD
 + Provide your Client ID, the acquired Client secret, the Tenant ID of your organisation, to your function app as environment variables via Azure Portal
 + Provide the sender (this function) and recipient (yourself) email addresses, also as environment variables, note the sender email has to be within your organisation, but the recipient email can be any service (personal Outlook, Gmail, Yahoo etc.)
-+ These environment variables should be named as:
-    CLIENT_ID, CLIENT_SECRET, TENANT_ID, SENDER_EMAIL_ADDR, RECIPIENT_EMAIL_ADDR
-  respectively
++ These environment variables should be named as: `CLIENT_ID`, `CLIENT_SECRET`, `TENANT_ID`, `SENDER_EMAIL_ADDR` and `RECIPIENT_EMAIL_ADDR` respectively
+
+***
+
+##### Additional resources
++ (https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-javascript "Getting started with Azure Functions")
++ (https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#settings "Manage your function app - Work with application settings")
++ (https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app "Register an application with the Microsoft identity platform")
++ (https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0 "Microsoft Graph REST API v1.0 endpoint reference")
+
+##### License
+Copyright &copy; 2022 John-Bread. All Rights Reserved.
+Licensed under GNU General Public License v3.0 \(see (https://github.com/Bread-John/contact-me/blob/main/LICENSE "License")\)
