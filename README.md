@@ -63,12 +63,12 @@ An Azure server-less function written in JavaScript (Node) for handling contact 
 
 ***
 
-##### Additional resources
-+ (https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-javascript "Getting started with Azure Functions")
-+ (https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#settings "Manage your function app - Work with application settings")
-+ (https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app "Register an application with the Microsoft identity platform")
-+ (https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0 "Microsoft Graph REST API v1.0 endpoint reference")
+### Additional resources
++ [Getting started with Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-get-started?pivots=programming-language-javascript "Getting started with Azure Functions")
++ [Manage your function app - Work with application settings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#settings "Manage your function app - Work with application settings")
++ [Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app "Register an application with the Microsoft identity platform")
++ [Microsoft Graph REST API v1.0 endpoint reference](https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0 "Microsoft Graph REST API v1.0 endpoint reference")
 
-##### License
+### License
 Copyright &copy; 2022 John-Bread. All Rights Reserved.
-Licensed under GNU General Public License v3.0 \(see (https://github.com/Bread-John/contact-me/blob/main/LICENSE "License")\)
+Licensed under GNU General Public License v3.0 (see ["License"](/blob/main/LICENSE))
