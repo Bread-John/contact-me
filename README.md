@@ -1,16 +1,18 @@
 # contact-me
-### An Azure server-less function written in JavaScript (Node) for handling contact forms on your personal website
+An Azure server-less function written in JavaScript (Node) for handling contact forms on your personal website
 
 ***
 
-##### The function will do:
-+ 1. Accept POST requests with user input from the front-end form
-+ 2. Validate the user input against few predefined rules (will be covered in details below)
-+ 3. Sanitise the user input so it does not contain any special character that may lead to injections
-+ 4. Interact with Microsoft Graph REST API to forward the sender contact info and message to you as an email
-+ 5. Send a response back to the front-end indicating the result of this process (success or fail)
+#### The function will do:
+1. Accept POST requests with user input from the front-end form
+2. Validate the user input against few predefined rules (will be covered in details below)
+3. Sanitise the user input so it does not contain any special character that may lead to injections
+4. Interact with Microsoft Graph REST API to forward the sender contact info and message to you as an email
+5. Send a response back to the front-end indicating the result of this process (success or fail)
+
 ***
-##### The function will accept:
+
+#### The function will accept:
 <table>
   <tr>
     <th>HTML Input name</th>
@@ -48,8 +50,10 @@
     <td>Yes</td>
   </tr>
 </table>
+
 ***
-##### The function will need:
+
+#### The function will need:
 + An Azure account with active subscription (to deploy this function)
 + An active work or school Microsoft account with global admin access to Azure Active Directory (to set up Graph API access key)
 + Register this function as a new application and acquire the client secret within AAD
