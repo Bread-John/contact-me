@@ -71,4 +71,4 @@ An Azure server-less function written in JavaScript (Node) for handling contact 
 
 ### License
 Copyright &copy; 2022 John-Bread. All Rights Reserved.
-Licensed under GNU General Public License v3.0 (see ["License"](/blob/main/LICENSE))
+Licensed under GNU General Public License v3.0 (see ["License"](/LICENSE))
