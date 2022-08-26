@@ -18,20 +18,26 @@ module.exports = async function (context, req) {
             } else {
                 const cleanValues = sanitiseSpecialChar(req.body);
 
-                await sendMail(cleanValues)
-                    .then(function (response) {
-                        context.res = {
-                            status: response.status || 200,
-                            body: JSON.stringify({
-                                msg: 'Your message has been sent',
-                                err: ''
-                            }),
-                            contentType: 'application/json'
-                        };
-                    })
-                    .catch(function(error) {
-                        throw error;
-                    });
+                const response = await sendMail(cleanValues);
+                if (response) {
+                    context.res = {
+                        status: response.status || 200,
+                        body: JSON.stringify({
+                            msg: 'Your message has been sent',
+                            err: ''
+                        }),
+                        contentType: 'application/json'
+                    };
+                } else {
+                    context.res = {
+                        status: 406,
+                        body: JSON.stringify({
+                            msg: '',
+                            err: 'Failed to forward this message'
+                        }),
+                        contentType: 'application/json'
+                    };
+                }
             }
         } else {
             context.res = {
